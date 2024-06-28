@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded",function(){
 
 //backgrounds change
 const backgrounds = [
-                    "../IMAGE/wallpaper/wallpaper1.jpg",
-                    "../IMAGE/wallpaper/wallpaper2.jpg",
-                    "../IMAGE/wallpaper/wallpaper3.jpg",
-                    "../IMAGE/wallpaper/wallpaper4.jpg",
-                    "../IMAGE/wallpaper/wallpaper5.jpg",
-                    "../IMAGE/wallpaper/wallpaper6.jpg"                
+                    "./IMAGE/wallpaper/wallpaper1.jpg",
+                    "./IMAGE/wallpaper/wallpaper2.jpg",
+                    "./IMAGE/wallpaper/wallpaper3.jpg",
+                    "./IMAGE/wallpaper/wallpaper4.jpg",
+                    "./IMAGE/wallpaper/wallpaper5.jpg",
+                    "./IMAGE/wallpaper/wallpaper6.jpg"                
                     ]
 let backgroundsIndex = 0;
 const header_content = document.querySelector(".header_content");
@@ -54,10 +54,10 @@ setTimeout(backgroundsChange,3000);
 //sidemenu hover
 const header_menu_img = document.querySelector(".header_menu_img");
 header_menu_img.addEventListener('mouseover',function(){
-    header_menu_img.src = "../IMAGE/icon/menu_miria_hover.jpg";
+    header_menu_img.src = "./IMAGE/icon/menu_miria_hover.jpg";
 });
 header_menu_img.addEventListener('mouseout',function(){
-    header_menu_img.src = "../IMAGE/icon/menu_miria.jpg";
+    header_menu_img.src = "./IMAGE/icon/menu_miria.jpg";
 });
 
 //sidemenu summon
