@@ -1,0 +1,315 @@
+/*KIHON NORMAL TAG*/
+.kiwi-maru-regular {
+    font-family: "Kiwi Maru", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body{
+    font-family: "Nico Moji";
+    color: white;
+    -webkit-text-stroke: 2px #333;
+}
+a{
+    text-decoration: none;
+    color:white;
+    -webkit-text-stroke: 2px #333;
+    cursor: pointer;
+}
+ul{
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    list-style-type: none;
+    padding:0;
+}
+li{
+    /*display: inline-block;*/
+    
+    padding-bottom: 25px;
+}
+/*KIHON NORMAL TAG END*/
+
+/*DOCUMENT BLIND PAGE START*/
+#blind{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:9999;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+.blind_bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    right:0;
+    transition:transform 2s;
+}
+.blind_bg.bg_1 {
+    background-color: #0000ff;
+    z-index: 30;
+}
+
+.blind_bg.bg_2 {
+    background-color: #ffffff;
+    z-index: 20;
+}
+
+.blind_bg.bg_3 {
+    background-color: #ff0000;
+    z-index: 10;
+}
+/*DOCUMENT BLIND PAGE END*/
+
+/*MENU BAR + SIDE BAR*/
+/*.go_news{
+    color:white;
+    border: none;
+    background-color: transparent;
+}*/
+/*SECTION1 MAIN PAGE START*/
+.appear{
+   /*opacity:0;*/
+}
+.header_content{
+    background-image: url("../IMAGE/wallpaper/wallpaper1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    transition: background-image 1s;
+}
+.header_content .header_logo{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.header_content .header_logo img{
+    width: 25vw;
+}
+.header_content .header_nav{
+    position:absolute;
+    top: 10vw;
+    left: 4vw;
+    font-size: 40px;
+}
+.header_menu{
+    position:fixed;
+    z-index: 9;
+    right:0;
+    top:-35px;
+ /*   height: 100vw;*/
+    width: auto;
+    transition:0.5s;
+}
+/*
+.header_content .header_menu a img{
+    position: absolute;
+    right: 0%;
+    top: -5%;
+    transition: 0.5s;
+}
+*/
+.header_menu .side_nav{
+    margin-top: 45px;
+    transform: translate(100%);
+    transition: 0.5s;
+    font-size:25px;
+}
+.header_menu .side_nav .side_nav_ul{
+    position: absolute;
+    display: inline-block;
+    width: 256px;
+    height: 100vh;
+    margin: auto;
+    list-style-type: none;
+    padding: 0;
+    transition: .5s;
+}
+.header_menu .side_nav .side_nav_ul .go_top{
+    position: absolute;
+    bottom: 41%;
+    left: 66.5px;
+    cursor:pointer;
+}
+.header_menu .toggle{
+    transform: translate(0%);
+
+}
+.header_menu .side_nav ul li{
+    padding-left:20px;
+}
+/*SECTION1 MAIN PAGE END*/
+
+/*SECTION2 MAIN PAGE START*/
+#section2{
+    display:flex;
+    position:relative;
+    height:auto;
+    height: 100vh;
+    background-color: rgba(252, 255, 208, 0.705);
+}
+#section2 .news_text{
+    flex-basis: 400px;
+    
+    position: relative;
+    background-color:cornflowerblue;
+}
+#section2 .news_front{
+    display: inline;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    font-size: 80px;
+}
+#section2 .news_front_what{
+    display:lnline;
+    position:absolute;
+    left:10%;
+    top: 25%;
+    font-size: 20px;
+    -webkit-text-stroke: 1px #333;
+}
+#section2 .news_content{
+    flex-basis: calc(100% - 400px);
+    position: relative;
+}
+#section2 .news_content .news_content_head{
+    /*width: 100%;*/
+    height: 100px;
+    border-bottom: black solid 1px;
+    box-sizing: border-box;
+    align-items: center;
+    -webkit-text-stroke: 1px #333;
+    font-size: 25px;
+    color: dodgerblue;
+    display: flex;
+}
+#section2 .news_content .news_content_head p{
+    height: 100%;
+    /*flex-basis: calc(100%,136px);*/
+    letter-spacing: .2em;
+    display:flex;
+    flex-basis: 350px;
+    align-items: center;
+}
+.news_content_head_DATE{
+    margin-left: 60px;
+    flex-basis: 290px;
+}
+
+#section2 .news_content .news_content_list{
+    box-sizing: border-box;
+    overflow:hidden;
+}
+#section2 .news_content .news_content_list ul{
+    width: 100%;
+}
+
+#section2 .news_content .news_content_list ul li{
+    width: 100%;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    transition: all .5s;
+    border-bottom: black solid 1px;
+}
+#section2 .news_content .news_content_list ul li:hover{
+    background-color: darkorange;
+}
+#section2 .news_content .news_content_list ul li a{
+    display:flex;
+}
+#section2 .news_content .news_content_list ul li a p{
+    letter-spacing: .2em;
+    font-size: 25px;
+    color:black;
+    -webkit-text-stroke: 0px #333;
+}
+
+#section2 .news_content .news_content_more{
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    border-radius:red solid 1px;
+}
+/*SECTION2 PAGE END*/
+
+/*section3 PAGE START*/
+.character_page{
+    position:relative;
+    height:900px;
+    width: 100vw;
+    background-color: greenyellow;
+    text-align: center;
+}
+.character_page .character_title{
+    padding-top: 20px;
+    font-size: 80px;
+}
+.character_page .character_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.character_page .character_info{
+    position:absolute;
+    width: 980px;
+    height: 660px;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../IMAGE/member_info/chara_detail_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: all .5s;
+}
+.character_page .character_icon{
+    /*box-sizing: border-box;*/
+    position: absolute;
+    top: 85%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 125px;
+    width: 1280.7px;
+}
+.character_page .character_icon ul{
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+    height: 125px;
+}
+.character_page .character_icon ul li{
+    background-color: white;
+    border: 3px solid black;
+
+    margin: 0 10px 0px 10px;
+    cursor: pointer;
+}
+
+
+/*footer start*/
+#footer{
+    height: 20vh;
+    background-color: ivory;
+    text-align: center;
+    position: relative;
+}
+
+.footer_copyright{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size:25px;
+    transform: translate(-50%,-50%);
+    color: white;
+    -webkit-text-stroke: 1px #333;
+}
